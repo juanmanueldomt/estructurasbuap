@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  portada: MyString
+  ponente: MyString
+  descripcion: MyText
+  lugar: MyString
+  fecha: 2017-03-01
+  horai: 2017-03-01 20:15:19
+  horaf: 2017-03-01 20:15:19
+  cupo: 1
+
+two:
+  nombre: MyString
+  portada: MyString
+  ponente: MyString
+  descripcion: MyText
+  lugar: MyString
+  fecha: 2017-03-01
+  horai: 2017-03-01 20:15:19
+  horaf: 2017-03-01 20:15:19
+  cupo: 1

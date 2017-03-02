@@ -5,6 +5,15 @@ application up and running.
 
 Things you may want to cover:
 
+------------------- VERSIONES ------------------------
+
+    ---- Version 0.5   ------
+    01/03/17    @juanmanueldomt
+    -Implementacion parcial
+    -Estilo Terminado
+    -Mostrar Talleres Terminado
+    -Mostrar Detalles Por Terminar  
+
 * Ruby version
 
 * System dependencies
@@ -22,3 +31,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
