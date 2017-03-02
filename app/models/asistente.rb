@@ -1,2 +1,2 @@
-class Asistente < ApplicationRecord
+class Asistente < ActiveRecord::Base
 end

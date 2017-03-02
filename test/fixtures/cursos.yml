@@ -6,9 +6,9 @@ one:
   ponente: MyString
   descripcion: MyText
   lugar: MyString
-  fecha: 2017-03-01
-  horai: 2017-03-01 20:15:19
-  horaf: 2017-03-01 20:15:19
+  fecha: 2017-03-02
+  horai: 2017-03-02 09:37:57
+  horaf: 2017-03-02 09:37:57
   cupo: 1
 
 two:
@@ -17,7 +17,7 @@ two:
   ponente: MyString
   descripcion: MyText
   lugar: MyString
-  fecha: 2017-03-01
-  horai: 2017-03-01 20:15:19
-  horaf: 2017-03-01 20:15:19
+  fecha: 2017-03-02
+  horai: 2017-03-02 09:37:57
+  horaf: 2017-03-02 09:37:57
   cupo: 1

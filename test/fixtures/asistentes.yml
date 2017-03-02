@@ -6,6 +6,7 @@ one:
   apellidom: MyString
   boleta: MyString
   asistencia: false
+  email: MyString
   curso_id: MyString
 
 two:
@@ -14,4 +15,5 @@ two:
   apellidom: MyString
   boleta: MyString
   asistencia: false
+  email: MyString
   curso_id: MyString

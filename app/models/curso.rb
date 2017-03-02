@@ -1,2 +1,2 @@
-class Curso < ApplicationRecord
+class Curso < ActiveRecord::Base
 end
