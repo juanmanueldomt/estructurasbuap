@@ -1,0 +1,22 @@
+<% if logged_in? %>
+
+<div class="container" style="padding-top: 50px">
+
+	<div class="panel panel-default">
+		<div class="panel-heading">Cursos</div>
+			<% Curso.all.each do |curso|%>
+    			<div class="panel-body row"> 
+    				<a class="col-lg-4" href="#"><%= curso.nombre %></a>  
+    				<a class="col-lg-4" href="#"><%= curso.ponente %></a>
+    				<a class="col-lg-4" href="#"><%= curso.cupo %></a>  
+    			</div>
+    
+    		<% end %>
+    	</div>
+    
+</div>
+
+<%else%>
+<%= render :file => 'public/500.html', :layout => false%>
+
+<% end %>
