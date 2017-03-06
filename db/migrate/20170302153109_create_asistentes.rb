@@ -7,9 +7,9 @@ class CreateAsistentes < ActiveRecord::Migration
       t.string :boleta
       t.boolean :asistencia
       t.string :email
-      t.string :curso_id
-
+      t.integer curso_id
       t.timestamps null: false
+      t.has_one :curso
     end
   end
 end

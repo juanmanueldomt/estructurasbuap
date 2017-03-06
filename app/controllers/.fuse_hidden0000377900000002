@@ -1,0 +1,20 @@
+class CursoController < ApplicationController
+  def new
+  	@curso = Curso.new
+  end
+  def create
+  	@curso = Curso.new(curso_params)
+  	if(@curso.save)
+  		redirect_to @usuario
+  	else
+  		render 'new'
+  	end
+  end
+ 
+  private
+
+  		def curso_params
+  		params.require(:curso).permite(:nombre,:portada,:ponente,:descripcion,:lugar,:fecha,:horai,:horaf,:cupo)
+  	
+	end
+end

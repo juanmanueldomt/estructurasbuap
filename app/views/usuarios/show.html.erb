@@ -5,18 +5,20 @@
 	<div class="panel panel-default">
 		<div class="panel-heading">Cursos</div>
 			<% Curso.all.each do |curso|%>
+            
     			<div class="panel-body row"> 
-    				<a class="col-lg-4" href="#"><%= curso.nombre %></a>  
-    				<a class="col-lg-4" href="#"><%= curso.ponente %></a>
-    				<a class="col-lg-4" href="#"><%= curso.cupo %></a>  
+    				<a class="col-lg-3" href="#"><%= curso.nombre %></a>  
+    				<a class="col-lg-3" href="#"><%= curso.ponente %></a>
+                    <a class="col-lg-3" href="#"><%= curso.asistentes.count%>/<%= curso.cupo %></a>
+    				<a class="col-lg-3" href="#"><%= curso.fecha%> <%= curso.horai.to_formatted_s(:time)%> - <%= curso.horaf.to_formatted_s(:time)%></a>
     			</div>
-    
     		<% end %>
+
+                <div class="panel-footer"><a href="/cursos/nuevo">Crear un nuevo curso</a></div>
     	</div>
     
 </div>
 
 <%else%>
 <%= render :file => 'public/500.html', :layout => false%>
-
 <% end %>

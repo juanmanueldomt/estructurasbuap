@@ -10,6 +10,7 @@ class CreateCursos < ActiveRecord::Migration
       t.time :horai
       t.time :horaf
       t.integer :cupo
+      t.has_many :asistentes
 
       t.timestamps null: false
     end

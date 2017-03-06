@@ -5,15 +5,16 @@
     <p class="text-center">Aprende nuevas cosas.<br> Para ser un mejor profesionista!</p>
     <div class="row text-center">
     <% Curso.all.each do |curso|%>
-        <div class="col-sm-4">
+    <% if curso.fecha.future? %>
+        <div class="col-sm-12 col-md-4 col-lg-4">
             <div class="thumbnail">
                 <a href=http://localhost:3000/main/view?<%=curso.id%>><img src=<%= curso.portada%> alt="curso_1"></a>
                 <p><strong><%= curso.nombre %></strong></p>
                 <p><%= dayname(curso.fecha.wday) %>. <%= curso.fecha.mday%> <%=daymonth(curso.fecha.month) %> <%= curso.fecha.year%> </p>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-whatever=<%=curso.id%>>Registrate</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-curso=<%=curso.id%> data-nombre="<%= curso.nombre %>">Registrate</button>
             </div>
         </div>
-    
+        <%end%>
     <% end %>
     </div>
   </div>
@@ -30,11 +31,13 @@
 <script type="text/javascript">
     $('#myModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
+  var recipient = button.data('curso') // Extract info from data-* attributes
+  var nom = button.data('nombre')
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this)
-  modal.find('#curse').val(recipient)
+  modal.find('#asistente_curso_id').val(recipient)
+  modal.find('#head').text("Apuntante ahora y <br> asiste a "+nom)
 })
 </script>
 
