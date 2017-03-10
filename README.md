@@ -6,6 +6,11 @@ Things you may want to cover:
 
 ------------------- VERSIONES ------------------------
 
+---- Version 0.7  -------
+01/03/17    @juanmanueldomt
+-Implementacion completa de mostrar cursos
+-Acceso y sembrado de usuarios
+
 ---- Version 0.6  -------
 01/03/17    @juanmanueldomt
 -Coreccion mayor de Errores

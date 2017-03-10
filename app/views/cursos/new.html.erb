@@ -1,0 +1,43 @@
+<% provide(:title, 'Nuevo Curso') %>
+
+<div class="row" style="padding-top: 50px">
+  <div class="col-md-8 col-md-offset-2">
+    <%= form_for(@curso) do |f| %>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-book"></i></span>
+      <%= f.text_field :nombre ,class:"form-control", placeholder:"Nombre del curso" ,required:true%>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <%= f.text_field :ponente , class:"form-control",placeholder:"Ponente",required:true%>
+    </div><br>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+      <%= f.text_field :portada , class:"form-control",placeholder:"URL de Portada",required:true%>
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-comment"></i></span>
+      <%= f.text_area :descripcion , class:"form-control",placeholder:"Descripcion",rows:"8",required:true%>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+      <%= f.text_field :lugar , class:"form-control",placeholder:"Lugar",required:true%>
+    </div><br>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+      <%= f.date_field :fecha , class:"form-control",required:true%>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+      <%= f.time_field :horai , class:"form-control",required:true%>
+      <%= f.time_field :horaf , class:"form-control",required:true%>
+    </div><br>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-list-alt"></i></span>
+      <%= f.number_field :cupo , class:"form-control",placeholder:"Cupo",required:true%>
+    </div><br><br>
+      <%= f.submit "Crear nuevo Curso", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

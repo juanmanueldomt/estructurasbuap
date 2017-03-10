@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
 
+  get 'cursos/new', to: 'cursos#new'
+  post 'cursos/new', to: 'cursos#create'
+  #delete 'delete', to: 'cursos#destroy'
+
   get 'asistentes/new'
   get 'usuarios/new'
   #get 'sessions/new'
@@ -15,6 +19,7 @@ Rails.application.routes.draw do
   resources :widgets
   resources :usuarios
   resources :asistentes
+  resources :cursos
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

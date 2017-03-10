@@ -5,4 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-	usuario.create(name:'amairanialtmin',email:'amairani.alt.min@gmail.com', password:'passw0rd',password_confirmation:'passw0rd')
+	Usuario.create(name:'amairanialtmin',email:'amairani.alt.min@gmail.com', password:'passw0rd',password_confirmation:'passw0rd')
+	Curso.create(nombre:'Curso de Ejemplo',portada: 'http://gexiq.com/demo/wp-content/uploads/2016/03/Lic-ingenieria-civil.jpg',ponente: 'Jose Hernandez Smith',descripcion: 'Un curso impartido por la buap, ',lugar:'Biblioteca Numero 1',fecha:'2017-03-27',horai:'12:00:00',horaf:'14:00:00',cupo:'50')

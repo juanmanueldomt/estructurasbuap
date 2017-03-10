@@ -9,7 +9,7 @@
         <div class="col-sm-12 col-md-4 col-lg-4">
             <div class="thumbnail">
                 <a href=http://localhost:3000/main/view?<%=curso.id%>><img src=<%= curso.portada%> alt="curso_1"></a>
-                <p><strong><%= curso.nombre %></strong></p>
+                <p><strong><%=link_to curso.nombre,curso %></strong></p>
                 <p><%= dayname(curso.fecha.wday) %>. <%= curso.fecha.mday%> <%=daymonth(curso.fecha.month) %> <%= curso.fecha.year%> </p>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-curso=<%=curso.id%> data-nombre="<%= curso.nombre %>">Registrate</button>
             </div>
@@ -37,7 +37,7 @@
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this)
   modal.find('#asistente_curso_id').val(recipient)
-  modal.find('#head').text("Apuntante ahora y <br> asiste a "+nom)
+  modal.find('#head').text("Apuntante ahora y asiste a "+nom)
 })
 </script>
 
