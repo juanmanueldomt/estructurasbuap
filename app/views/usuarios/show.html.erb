@@ -7,10 +7,10 @@
 			<% Curso.all.each do |curso|%>
             
     			<div class="panel-body row"> 
-    				 <%= link_to curso.nombre, curso, class:"col-lg-3"%>
-    				<a class="col-lg-3" href="#"><%= curso.ponente %></a>
-                    <a class="col-lg-3" href="#"><%= curso.asistentes.count%>/<%= curso.cupo %></a>
-    				<a class="col-lg-3" href="#"><%= curso.fecha%> <%= curso.horai.to_formatted_s(:time)%> - <%= curso.horaf.to_formatted_s(:time)%></a>
+    				 <%= link_to curso.nombre, curso, class:"col-lg-3 col-xs-3"%>
+    				<a class="col-lg-3 col-xs-3" href="#"><%= curso.ponente %></a>
+                    <a class="col-lg-3 col-xs-2" href="#"><%= curso.asistentes.count%>/<%= curso.cupo %></a>
+    				<a class="col-lg-3 col-xs-4" href="#"><%= curso.fecha%> <%= curso.horai.to_formatted_s(:time)%> - <%= curso.horaf.to_formatted_s(:time)%></a>
     			</div>
     		<% end %>
 

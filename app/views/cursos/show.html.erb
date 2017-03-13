@@ -2,6 +2,9 @@
 	<div class="page-header">
 		<h1><%=@curso.nombre%></h1>
 		<p><%=@curso.ponente %></p>
+		<% if logged_in? %>
+		<a href="/asistencia?id=<%=@curso.id%>"><button type="button" class="btn-default btn-primary">Verificar Asistencia</button></a>
+		<% end %>
 	</div>
 	<%= @curso.descripcion %>
 </div>

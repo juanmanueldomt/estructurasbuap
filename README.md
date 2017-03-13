@@ -5,6 +5,10 @@ This README would normally document whatever steps are necessary to get the appl
 Things you may want to cover:
 
 ------------------- VERSIONES ------------------------
+---- Version 0.7.1 ------
+13/03/17    @juanmanueldomt
+-Llegada a Produccion
+-Muestra de Cursos y Asistentes
 
 ---- Version 0.7  -------
 01/03/17    @juanmanueldomt

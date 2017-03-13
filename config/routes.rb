@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'asistencia', to: 'asistencia#ver'
+
   get 'cursos/new', to: 'cursos#new'
   post 'cursos/new', to: 'cursos#create'
   #delete 'delete', to: 'cursos#destroy'
